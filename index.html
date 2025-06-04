@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast met Idioten</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff3c00;
+      --accent: #00ffd5;
+      --bg: #111;
+      --text: #f4f4f4;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1a1a1a;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--primary);
+    }
+
+    header p {
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .podcast-card {
+      background: #1a1a1a;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 0 transparent;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .podcast-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .podcast-card img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .podcast-card .content h3 {
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    .podcast-card .content p {
+      margin-bottom: 1rem;
+    }
+
+    .podcast-card button {
+      background: var(--primary);
+      color: #000;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .podcast-card button:hover {
+      background: var(--accent);
+    }
+
+    footer {
+      background: #1a1a1a;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .podcast-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Podcast met Idioten</h1>
+    <p>Gemaakt door Leonie Willekens en Rozanna Jambe</p>
+  </header>
+
+  <main class="container">
+    <div class="podcast-card">
+      <img src="https://via.placeholder.com/150" alt="Aflevering 1">
+      <div class="content">
+        <h3>Aflevering 1: De Grote Intro</h3>
+        <p>Welkom bij onze allereerste aflevering! Leer ons kennen en lach mee met onze domste momenten.</p>
+        <button>Luister nu</button>
+      </div>
+    </div>
+
+    <div class="podcast-card">
+      <img src="https://via.placeholder.com/150" alt="Aflevering 2">
+      <div class="content">
+        <h3>Aflevering 2: Fouten maken moet</h3>
+        <p>We bespreken onze gênantste blunders – van school tot relaties. Alles komt langs.</p>
+        <button>Luister nu</button>
+      </div>
+    </div>
+
+    <div class="podcast-card">
+      <img src="https://via.placeholder.com/150" alt="Aflevering 3">
+      <div class="content">
+        <h3>Aflevering 3: De Quiz der Domheid</h3>
+        <p>Wie weet het minst? Een hilarische quiz-aflevering vol chaos en rare weetjes.</p>
+        <button>Luister nu</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Podcast met Idioten – Leonie Willekens & Rozanna Jambe
+  </footer>
+</body>
+</html>
